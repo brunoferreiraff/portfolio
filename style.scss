@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    //background-color: whitesmoke; - cor de fundo cinza para os textos. A corrigir ou alterar.
+    color: black;
+}
+
+body{
+    font-family: 'Poppins';
+    font-size:1.2rem;
+    
+}
+
+main{
+    display:flex;
+    max-width: 1200px;
+    margin: 2rem auto;
+    margin-top: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow:hidden;
+    
+}
+
+.sidebar{
+    flex-basis:30%;
+    background-color: #ffffff;
+    border-right:1px solid #eeeeee;
+    padding: 2.5rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align:center;
+    
+}
+
+.conteudoPrincipal{
+    flex-basis: 70%; //O conteúdo principal vai ocupar 70% da 'tela'
+    background-color: #fafafa;
+    padding:2.5rem;
+}
+
+.sidebar-info{
+    align-items: center;
+
+    .fotoPerfil{
+        background:#FFDB58;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        overflow:hidden;
+        margin-bottom: 1.5rem;
+
+        img{
+
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .informacoes{
+        color: black;
+        .nome{
+            font-size: 1.7rem;
+            font-weight: 500;
+        }
+        .cargo{
+            color: black;
+            font-size: 0.8rem;
+            padding: 0.3rem 0.8rem;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 0.5rem;
+        }
+    }
+}
+
+
+
+.sidebar-contato{
+    width: 100%; //faz ocupar todo o espaço da sidebar
+    margin-bottom: 60rem; //voltar
+
+    .separador{
+        width: 100%;
+        height: 2px; //Isso aqui parece ser um ponto de atenção. REVISITAR
+        background-color: #eeeeee;
+        margin: 2rem 0;
+
+    }
+
+    .listaDeContato{
+        list-style: none;//remove as bolinhas da lista. Aqueles itens tipo de word.
+    }
+
+    .itemDeContato{
+        border-top: 5px;
+        display: flex;
+        align-items: center;
+        text-align: left;
+        margin-bottom: 1rem;
+
+        .icon-box{
+            flex-shrink: 0; //impede que o icone encolha. O nome já fala né?
+            width: 45px;
+            height: 45px;
+            border-radius: 10px;
+            background-color:grey;
+            display:grid;
+            place-items:center;
+
+           
+
+            
+        }
+    }
+
+
+    .contact-info{
+        margin-left:1rem;
+
+        .contact-title{
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            color: grey;
+        }
+        .contact-link{
+            font-size: 0.7rem;
+            text-decoration: none;
+            font-style: normal;
+        }
+
+        .contact-link:hover{
+            color:#FFDB58;
+        }
+    }
+}
+
+.social-list{
+    display:flex;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+
+    .social-link{
+        font-size: 1.4rem;
+        transition:color 0.3s ease; //efeito na mudança de cor
+    }
+}
