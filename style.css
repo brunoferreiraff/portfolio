@@ -1,0 +1,10 @@
+*{
+    margin: 10;
+    padding: 10;
+    font-family: 'Montserrat', sans-serif;
+    color: grey;
+}
+
+nav {
+text-transform: uppercase;
+}
