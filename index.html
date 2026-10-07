@@ -1,85 +1,212 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio do Bruno Ferreira</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Seu Nome | Designer + Engenheiro de Software</title>
+  <meta name="description" content="Portfólio de Seu Nome: design de produto e engenharia de software.">
+  <meta name="theme-color" content="#fafcfd">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
 
+  <!-- NAV -->
+  <header class="nav">
+    <a href="#topo" class="brand">
+      <span class="brand-dot"></span>
+      <span class="brand-text"><strong>Seu Nome</strong><small>Designer + Engenheiro</small></span>
+    </a>
     <nav>
-        <div class="header-left">
-            <h3>Bruno Ferreira</h3>
-            <p>Engenheiro de Software</p>
-            <p>Em busca de estágio</p>
-        </div>
-        
-        <div class="header-right">
-            <ul>
-                <li><a href="">Experiências</a></li>
-                <li><a href="">Educação</a></li>
-                <li><a href="">Curriculo</a></li>
-                <li><a href="">Projetos</a></li>
-                <li><a href="">Sobre Mim</a></li>
-            </ul>
-        </div>
+      <a href="#projetos">Projetos</a>
+      <a href="#experiencia">Experiência</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato" class="btn-small">Contato</a>
     </nav>
-</header>
+  </header>
 
-<main>
-    <section class="apresentacao-inicial">
-        <div class="apresentacao-txt">
-        <h1>Eu sou o Bruno Ferreira, <span>graduando de Engenharia de Software</span> pela Universidade Veiga Almeida.</h1>
-        </div>
-        <div class="apresentacao-foto"></div>
+  <main id="topo">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-avatar" aria-hidden="true">SN</div>
+      <p class="hello">Oi! Eu sou</p>
+      <h1>Seu Nome, designer que <em>também programa</em> :)</h1>
+      <p class="lead">
+        Já passei por
+        <span class="chip"><i style="background:#e63946"></i>Empresa A</span>
+        <span class="chip"><i style="background:#2a9d8f"></i>Empresa B</span>
+        <span class="chip"><i style="background:#264653"></i>Empresa C</span>
+        e <span class="chip"><i style="background:#f4a261"></i>Empresa D</span>.
+      </p>
+      <p class="lead">Hoje, crio produtos digitais, sites e apps:</p>
+
+      <ul class="pills">
+        <li><a href="#"><span class="pill-icon" style="background:#e63946">O</span>Meu App</a></li>
+        <li><a href="#"><span class="pill-icon" style="background:#2a9d8f">S</span>Meu SaaS</a></li>
+        <li><a href="#"><span class="pill-icon" style="background:#264653">G</span>Minha Ferramenta</a></li>
+        <li><a href="#"><span class="pill-icon" style="background:#f4a261">K</span>Meu Experimento</a></li>
+      </ul>
+
+      <p class="lead">E compartilho minha jornada com a comunidade:</p>
+      <ul class="pills pills-social">
+        <li><a href="#"><strong>+10 mil</strong> no YouTube</a></li>
+        <li><a href="#"><strong>+5 mil</strong> no LinkedIn</a></li>
+        <li><a href="#"><strong>+8 mil</strong> no Instagram</a></li>
+      </ul>
     </section>
-<div class="experiencias-resumo">
-    <div class="experiencias-coluna">
 
-        <h4>2026</h4>
-        <div class="experiência-empresa">Indenizei
-            <p>Estagiário Desenvolvimento Web - 
-                aqui está a descrição do que eu fiz do que eu aprendi e do que eu desenvolvi
-            </p>
+    <!-- TIMELINE (estilo Rachel) -->
+    <section class="timeline" aria-label="Linha do tempo">
+      <div class="tl-item"><span class="tl-year">2026</span><span class="tl-company">Empresa A</span><span class="tl-role">Design Engineer</span></div>
+      <div class="tl-item"><span class="tl-year">2025</span><span class="tl-company">Empresa B</span><span class="tl-role">Software Engineer</span></div>
+      <div class="tl-item"><span class="tl-year">2024</span><span class="tl-company">Empresa C</span><span class="tl-role">Product Designer</span></div>
+      <div class="tl-item"><span class="tl-year">2023</span><span class="tl-company">Empresa D</span><span class="tl-role">Estágio em Design + Eng.</span></div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section id="projetos" class="section">
+      <h2 class="section-title">Projetos selecionados</h2>
+      <div class="grid">
+        <a href="#" class="card c1">
+          <div class="card-art"><span>01</span></div>
+          <div class="card-body">
+            <h3>O futuro da IA e hardware</h3>
+            <p>Empresa A <span>• Conceito 2026</span></p>
+          </div>
+        </a>
+        <a href="#" class="card c2">
+          <div class="card-art"><span>02</span></div>
+          <div class="card-body">
+            <h3>Experiências de IA para consumidores</h3>
+            <p>Empresa B <span>• Contrato 2025</span></p>
+          </div>
+        </a>
+        <a href="#" class="card c3">
+          <div class="card-art"><span>03</span></div>
+          <div class="card-body">
+            <h3>Mobile-first para ferramentas de design</h3>
+            <p>Empresa C <span>• Conceito 2025</span></p>
+          </div>
+        </a>
+        <a href="#" class="card c4">
+          <div class="card-art"><span>04</span></div>
+          <div class="card-body">
+            <h3>IA com patente pendente</h3>
+            <p>Empresa D <span>• Entregue 2024</span></p>
+          </div>
+        </a>
+        <a href="#" class="card c5">
+          <div class="card-art"><span>05</span></div>
+          <div class="card-body">
+            <h3>O primeiro coach de IA do mercado</h3>
+            <p>Meu App <span>• Lançado 2023</span></p>
+          </div>
+        </a>
+        <a href="#" class="card c6">
+          <div class="card-art"><span>06</span></div>
+          <div class="card-body">
+            <h3>Autofill nativo para desktop</h3>
+            <p>Empresa B <span>• Lançado 2025</span></p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- EXPERIÊNCIA (estilo Yudi, abas só com CSS) -->
+    <section id="experiencia" class="section">
+      <h2 class="section-title">Minha experiência</h2>
+
+      <div class="tabs">
+        <input type="radio" name="exp" id="t1" checked>
+        <input type="radio" name="exp" id="t2">
+        <input type="radio" name="exp" id="t3">
+        <input type="radio" name="exp" id="t4">
+
+        <div class="tab-list">
+          <label for="t1">Empresa A</label>
+          <label for="t2">Empresa B</label>
+          <label for="t3">Empresa C</label>
+          <label for="t4">Empresa D</label>
         </div>
-    </div>
-    <div class="experiencias-coluna">
 
-        <h4>2026</h4>
-        <div class="experiência-empresa">Indenizei
-            <p>Estagiário Desenvolvimento Web</p>
+        <div class="panels">
+          <article class="panel p1">
+            <h3>Design Engineer @ Empresa A</h3>
+            <span class="date">JAN 2026 — ATUAL</span>
+            <ul>
+              <li>Desenhei e implementei o novo fluxo de onboarding, aumentando a ativação em 32%.</li>
+              <li>Criei componentes reutilizáveis que reduziram o tempo de entrega de telas pela metade.</li>
+            </ul>
+          </article>
+          <article class="panel p2">
+            <h3>Software Engineer @ Empresa B</h3>
+            <span class="date">ABR 2025 — SET 2025</span>
+            <ul>
+              <li>Refatorei rotinas críticas, reduzindo em 90% as conexões ao banco de dados.</li>
+              <li>Migrei arquivos estáticos sem nenhum downtime, usando rollout gradual.</li>
+            </ul>
+          </article>
+          <article class="panel p3">
+            <h3>Product Designer @ Empresa C</h3>
+            <span class="date">MAI 2024 — AGO 2024</span>
+            <ul>
+              <li>Conduzi pesquisas com usuários e transformei os achados em um novo protótipo.</li>
+              <li>Colaborei com engenharia para entregar a funcionalidade em 6 semanas.</li>
+            </ul>
+          </article>
+          <article class="panel p4">
+            <h3>Estágio em Design + Eng. @ Empresa D</h3>
+            <span class="date">2023</span>
+            <ul>
+              <li>Primeiro contato com produto de ponta a ponta: do wireframe ao deploy.</li>
+              <li>Desenvolvi uma landing page que dobrou a taxa de conversão da waitlist.</li>
+            </ul>
+          </article>
         </div>
-    </div>
-    <div class="experiencias-coluna">
+      </div>
+    </section>
 
-        <h4>2026</h4>
-        <div class="experiência-empresa">Indenizei
-            <p>Estagiário Desenvolvimento Web</p>
-        </div>
-    </div>
-    <div class="experiencias-coluna">
+    <!-- SOBRE -->
+    <section id="sobre" class="section about">
+      <div class="about-text">
+        <h2 class="section-title">Sobre mim</h2>
+        <p>Tenho <strong>X anos de experiência</strong> unindo design de produto e engenharia de software, trabalhando com times pequenos e grandes empresas.</p>
+        <p>Sou otimista e gosto de aproveitar a jornada. Nascido e criado em <strong>sua cidade</strong>, adoro transformar ideias em produtos que as pessoas realmente usam.</p>
+        <p>Estou numa jornada de criar meus próprios produtos na internet. 🚀</p>
+        <ul class="facts">
+          <li><b>📍</b> Sua cidade, Brasil</li>
+          <li><b>🛠️</b> Figma, HTML, CSS, TypeScript</li>
+          <li><b>🎯</b> Foco em produtos de IA</li>
+        </ul>
+      </div>
+      <div class="about-photo" aria-hidden="true"><span>Sua foto aqui</span></div>
+    </section>
 
-        <h4>2026</h4>
-        <div class="experiência-empresa">Indenizei
-            <p>Estagiário Desenvolvimento Web</p>
-        </div>
-    </div>
+    <!-- EXTRAS -->
+    <section class="section extras">
+      <a href="#" class="extra"><span>🎓</span><div><h3>Mentoria</h3><p>Para quem quer criar conteúdo ou entrar em tech</p></div></a>
+      <a href="#" class="extra"><span>🗂️</span><div><h3>Materiais gratuitos</h3><p>Templates, guias e recursos para baixar</p></div></a>
+      <a href="#" class="extra"><span>🤝</span><div><h3>Media kit</h3><p>Para parcerias e colaborações</p></div></a>
+    </section>
 
+  </main>
 
-</div>
+  <!-- FOOTER -->
+  <footer id="contato" class="footer">
+    <h2>Vamos criar algo juntos?</h2>
+    <a href="mailto:seuemail@exemplo.com" class="mail">seuemail@exemplo.com</a>
+    <ul class="social">
+      <li><a href="#">LinkedIn</a></li>
+      <li><a href="#">GitHub</a></li>
+      <li><a href="#">YouTube</a></li>
+      <li><a href="#">Instagram</a></li>
+      <li><a href="#">Currículo (PDF)</a></li>
+    </ul>
+    <p class="copy">Desenhado e codado por Seu Nome com HTML + CSS. © 2026</p>
+  </footer>
 
-<!-- SEÇÃO DE PROJETOS -->
-
-<SECTION>
-    <h2>PROJETOS</h2>
-</SECTION>
-
-
-
-
-<!-- SEÇÃO DE FALE COMIGO -->
-</main>
 </body>
 </html>
